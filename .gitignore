@@ -1,2 +1,7 @@
+# Remove if present
+# index.md
+
+# Keep other existing entries
 node_modules/
 dist/
+.env

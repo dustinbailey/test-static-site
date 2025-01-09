@@ -61,7 +61,26 @@ article pre code {
     border-bottom: 1px solid #eee;
 }
 
-.post-date {
-    color: #666;
-    font-size: 0.9em;
-} 
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.post-card {
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* Remove this duplicate style */
+- .post-date {
+-     color: #666;
+-     font-size: 0.9em;
+- } 

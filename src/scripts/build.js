@@ -18,7 +18,15 @@ function buildPages() {
   const pagesDir = 'src/content/pages';
   const files = fs.readdirSync(pagesDir);
   
+  // Handle index.html specially
+  const indexContent = fs.readFileSync('src/templates/index.html', 'utf-8');
+  const template = fs.readFileSync('src/templates/page.html', 'utf-8');
+  const indexHtml = template.replace('{{content}}', indexContent);
+  fs.writeFileSync('dist/index.html', indexHtml);
+  
   files.forEach(file => {
+    if (file === 'index.md') return; // Skip index.md if it exists
+    
     if (file.endsWith('.md')) {
       const markdown = fs.readFileSync(path.join(pagesDir, file), 'utf-8');
       const html = convertMarkdown(markdown);
