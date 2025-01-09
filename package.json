@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "node src/scripts/build.js",
+    "serve": "serve dist"
+  },
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "## 1. Make a landing page 2. Make a template for a blog post 3. Make a Markdown -> HTML converter 4. Simple integration for ConvertKit 5. Add a contact form",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "marked": "^15.0.6",
+    "serve": "^14.2.4"
+  }
+}

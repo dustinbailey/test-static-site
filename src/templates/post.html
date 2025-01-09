@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - My Static Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Blog-specific styles */
+        .post-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        .back-to-blog {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #f0f0f0;
+            text-decoration: none;
+            color: #333;
+            border-radius: 4px;
+        }
+        .back-to-blog:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/about.html">About</a>
+        <a href="/faq.html">FAQ</a>
+    </nav>
+    <main>
+        <article>
+            {{content}}
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Static Site</p>
+    </footer>
+</body>
+</html> 
